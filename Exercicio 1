@@ -1,32 +1,28 @@
 //main
 
-package ola;
+package ex1;
 
-public class Ola {
+public class ex1 {
 
-    
-    public static void main(String[] args) {
-       
-        
-        OlaMundo mundo = new OlaMundo();
+ public static void main(String[] args) {
+     
+        OlaMundo mundo = new OlaMundo ();
         String ola = mundo.Comprimento;
         
         System.out.println(ola);
-        
     }
     
 }
+   
 
 //Classe
 
-package ola;
+package ex1;
 
-class OlaMundo {
-
-String Comprimento = ("Ola, mundo");
+public class OlaMundo {
     
-public String Ola (){
-   return Comprimento;
-}
-
+    String Comprimento= ("Olá,Mundo");
+    public String Ola () {
+        return Comprimento;
+    }
 }
