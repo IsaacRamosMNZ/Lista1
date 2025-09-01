@@ -1,0 +1,32 @@
+//main
+
+package ola;
+
+public class Ola {
+
+    
+    public static void main(String[] args) {
+       
+        
+        OlaMundo mundo = new OlaMundo();
+        String ola = mundo.Comprimento;
+        
+        System.out.println(ola);
+        
+    }
+    
+}
+
+//Classe
+
+package ola;
+
+class OlaMundo {
+
+String Comprimento = ("Ola, mundo");
+    
+public String Ola (){
+   return Comprimento;
+}
+
+}
