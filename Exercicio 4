@@ -1,0 +1,49 @@
+//main
+
+package ex4;
+
+
+public class Ex4 {
+
+    public static void main(String[] args) {
+        String frase = "Esta é uma frase de exemplo para exercício.";
+
+        // Usando os métodos da classe externa
+        System.out.println("1. Tamanho da frase: " + ManipuladorDeString.obterTamanho(frase));
+        System.out.println("2. Frase em maiúsculas: " + ManipuladorDeString.converterParaMaiusculas(frase));
+        System.out.println("3. Frase em minúsculas: " + ManipuladorDeString.converterParaMinusculas(frase));
+        System.out.println("4. Substring extraída: " + ManipuladorDeString.extrairSubstring(frase));
+    }
+}
+
+//Classe
+
+
+package ex4;
+
+
+public class ManipuladorDeString {
+    public static int obterTamanho(String texto) {
+        return texto.length();
+    }
+    
+    public static String converterParaMaiusculas(String texto) {
+        return texto.toUpperCase();
+    }
+    
+    
+     public static String converterParaMinusculas(String texto) {
+        return texto.toLowerCase();
+    }
+     
+     public static String extrairSubstring(String texto) {
+        String alvo = "frase de exemplo";
+        int inicio = texto.indexOf(alvo);
+        if (inicio != -1) {
+            return texto.substring(inicio, inicio + alvo.length());
+        } else {
+            return "Substring não encontrada.";
+        }
+    }
+}
+  
